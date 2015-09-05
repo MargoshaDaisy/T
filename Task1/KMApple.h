@@ -10,4 +10,8 @@
 
 @interface KMApple : NSObject
 
+
+
+-(void)saySmth;
+
 @end
