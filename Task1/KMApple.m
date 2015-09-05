@@ -10,4 +10,13 @@
 
 @implementation KMApple
 
+-(void)saySmth
+{
+    NSLog(@"Hello!");
+}
+
+
+
+
+
 @end
