@@ -7,11 +7,15 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "KMApple.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        // insert code here...
-        NSLog(@"Hello, World!");
+        KMApple *apple = [KMApple alloc];
+        [apple init];
+        [apple saySmth];
+        [apple release];
+        
     }
     return 0;
 }

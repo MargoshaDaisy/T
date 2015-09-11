@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		D0240FDA1B9AE5DB00B1C43C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D0240FD91B9AE5DB00B1C43C /* main.m */; };
+		D0240FE21B9AE6A600B1C43C /* KMApple.m in Sources */ = {isa = PBXBuildFile; fileRef = D0240FE11B9AE6A600B1C43C /* KMApple.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +26,8 @@
 /* Begin PBXFileReference section */
 		D0240FD61B9AE5DB00B1C43C /* Task1 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Task1; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0240FD91B9AE5DB00B1C43C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D0240FE01B9AE6A600B1C43C /* KMApple.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KMApple.h; sourceTree = "<group>"; };
+		D0240FE11B9AE6A600B1C43C /* KMApple.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KMApple.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +61,8 @@
 			isa = PBXGroup;
 			children = (
 				D0240FD91B9AE5DB00B1C43C /* main.m */,
+				D0240FE01B9AE6A600B1C43C /* KMApple.h */,
+				D0240FE11B9AE6A600B1C43C /* KMApple.m */,
 			);
 			path = Task1;
 			sourceTree = "<group>";
@@ -118,6 +123,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0240FE21B9AE6A600B1C43C /* KMApple.m in Sources */,
 				D0240FDA1B9AE5DB00B1C43C /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -202,6 +208,7 @@
 		D0240FDE1B9AE5DB00B1C43C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -209,6 +216,8 @@
 		D0240FDF1B9AE5DB00B1C43C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
+				"MTL_ENABLE_DEBUG_INFO[arch=*]" = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
